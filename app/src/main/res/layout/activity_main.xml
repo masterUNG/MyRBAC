@@ -6,6 +6,14 @@
     android:layout_height="match_parent"
     tools:context="app.ewtc.masterung.myrbac.MainActivity">
 
+
+    <ImageView
+        android:scaleType="centerCrop"
+        android:src="@drawable/my_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!--Content-->
     <FrameLayout
         android:id="@+id/mainContainer"
         android:layout_width="match_parent"
