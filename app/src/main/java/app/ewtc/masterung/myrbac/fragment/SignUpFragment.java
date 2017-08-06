@@ -11,6 +11,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 
 import app.ewtc.masterung.myrbac.R;
+import app.ewtc.masterung.myrbac.manager.MyAlert;
 
 /**
  * Created by masterung on 8/6/2017 AD.
@@ -56,11 +57,13 @@ public class SignUpFragment extends Fragment {
                 nameString = nameEditText.getText().toString().trim();
                 userString = userEditText.getText().toString().trim();
                 passwordString = passwordEditText.getText().toString().trim();
+                MyAlert myAlert = new MyAlert(getActivity());
 
                 //Check Space
                 if (nameString.equals("") || userString.equals("") || passwordString.equals("")) {
                     //Have Space
                     Log.d("6AugV1", "Have Space");
+                    myAlert.myDialog("Have Space", "Please Fill All Every Blank");
 
                 } else {
                     //No Space
