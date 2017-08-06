@@ -6,7 +6,7 @@
     <LinearLayout
         android:layout_marginRight="50dp"
         android:layout_marginLeft="50dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="20dp"
         android:gravity="center_horizontal"
         android:orientation="vertical"
         android:layout_width="match_parent"
@@ -79,6 +79,7 @@
 
     <!--นี่คือปุ่ม-->
     <Button
+        android:id="@+id/btnSignIn"
         android:textColor="@color/textColorPrimary"
         android:background="@color/colorPrimaryDark"
         android:text="@string/sign_in"
